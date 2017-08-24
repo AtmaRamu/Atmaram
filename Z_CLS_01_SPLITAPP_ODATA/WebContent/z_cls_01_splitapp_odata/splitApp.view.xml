@@ -1,0 +1,15 @@
+<core:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m"
+		controllerName="z_cls_01_splitapp_odata.splitApp" xmlns:html="http://www.w3.org/1999/xhtml">
+	<SplitApp id="idSplitApp">
+	<masterPages>
+	<mvc:XMLView viewName="z_cls_01_splitapp_odata.List"></mvc:XMLView>
+	
+	</masterPages>
+	<detailPages>
+	<mvc:XMLView viewName="z_cls_01_splitapp_odata.SimpleForm" id="iddetailpage"></mvc:XMLView>
+	
+	
+	</detailPages>
+	
+	</SplitApp>
+</core:View>

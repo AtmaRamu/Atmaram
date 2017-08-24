@@ -1,0 +1,18 @@
+<core:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m"
+		controllerName="com.smax.empreg.routing.controller.LinksPage" xmlns:html="http://www.w3.org/1999/xhtml">
+	<Page title="Master Page" id="idMasterPage">
+		<content>
+			<List>
+				<items>
+					<StandardListItem title="Registration Details" type="Active" press="onGotoRegDetailsPg"></StandardListItem>
+					<StandardListItem title="Work Experience" type="Active" press="onGotoWorkExpDetailsPg"></StandardListItem>
+					<StandardListItem title="Contacts" type="Active" press="onGotoContactDetailsPg"></StandardListItem>
+					<StandardListItem title="Bank Details" type="Active" press="onGotoBankDetailsPg"></StandardListItem>
+					<StandardListItem title="Certifications" type="Active" press="onGotoCertificationDetailsPg"></StandardListItem>
+					<StandardListItem title="Personal Documents" type="Active" press="onGotoPersonalDocsPg"></StandardListItem>
+					<StandardListItem title="Summary" type="Active" press="onGotoSummaryPg"></StandardListItem>
+				</items>
+			</List>
+		</content>
+	</Page>
+</core:View>

@@ -1,0 +1,50 @@
+{
+	"sap.app": {
+		"id": "smax.empReg"
+	},
+
+	"sap.ui5": {
+		"rootView": "view.App",
+		"routing": {
+			"config": {
+				"routerClass": "sap.m.routing.Router",
+				"viewType": "XML",
+				"controlId": "idApp",
+				"controlAggregation": "pages"
+			},
+			"routes": [{
+					"pattern": "",
+					"name": "route1",
+					"viewName": "view.Emplyoee_reg"
+				},
+				{
+					"pattern": "pagetwo",
+					"name": "route2",
+					"viewName": "view.SPLITAPP",
+					"targetControl" : "idApp",
+					"targetAggregation" : "pages",
+					
+					"subroutes" : [{
+					 "pattern": "masterpage",
+					"name": "route3",
+					"viewName": "view.Second_page",
+					"targetControl" : "idSplitapp",
+					"targetAggregation" : "masterPages",
+					
+					"subroutes" : [{
+					   "pattern" : "detailpage",
+					   "name" : "route4",
+					   "viewName": "view.Third_page",
+					   "targetControl" : "idSplitapp",
+					   "targetAggregation" : "detailPages "
+					}]
+					
+					
+					
+					}]
+				}
+			]
+
+		}
+	}
+}

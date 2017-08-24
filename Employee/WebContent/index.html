@@ -1,0 +1,84 @@
+<html>
+<head>
+<script>
+function my()
+{
+var uname=document.getElementById("txtname").value;
+var udob=document.getElementById("dob").value;
+var usity=document.getElementById("scity").value;
+var male=document.getElementById("gmale").value;
+var g=document.getElementById("fmale").value;
+
+document.getElementById("uname").innerHTML=""+uname;
+document.getElementById("udob").innerHTML=""+udob;
+document.getElementById("city").innerHTML=""+usity;
+document.getElementById("gender").innerHTML=""+male;
+document.getElementById("fmal").innerHTML=""+g;
+}
+</script>
+</head>
+<body>
+	<div>
+		<form name="form1">
+			<fieldset >
+				<legend > USER REGISTRATION </legend>
+					<table width="400" align="center" rules="all" border="1px" >
+						<tr>
+							<td style="background-color: powderblue"> user name </td>
+							<td> <input type="text" id="txtname"> </td>
+						</tr>
+						
+						<tr>
+							<td style="color: blue;"> date of birth </td>
+							<td> <input type="date" id="dob"> </td>
+						</tr>
+						<tr>
+							<td> select your city </td>
+							<td>
+							<select id="scity">
+							<option value="hyd"> hyd </option>
+							<option value="bza"> bza </option>
+							<option value="vskp"> vskp </option>
+							</td>
+						</tr>
+						<tr>
+							<td> select gender </td>
+							<td><input type="radio" name="gender" value="male" id="gmale"> male 
+							<input type="radio" name="gender" value="female" id="fmale"> female
+							</td>
+						</tr>
+							<tr>
+							<td colspan="2" align="center">
+							<input type="button" value="register" onclick="my()">
+							</td>
+							</tr>
+					</table>
+			</fieldset>
+			<br/>
+			<hr/>
+			<br />
+			<fieldset style="display.none" id="details">
+			<legend> USER DETAILS </legend>
+			<table rules ="all" border="1px" align="center" width="400" >
+			<tr>
+				<td> user name </td>
+				<td id="uname"> </td>
+			</tr>
+			<tr>
+				<td> date of birth </td>
+				<td id="udob"> </td>
+			</tr>
+			<tr>
+				<td> user selected city</td>
+				<td id="city"> </td>
+			</tr>
+			<tr>
+				<td> user belongs to  </td>
+				<td id="gender"> </td>
+			</tr>
+			</table>
+			</fieldset>			
+		</form>
+	</div>
+</body>
+</html>

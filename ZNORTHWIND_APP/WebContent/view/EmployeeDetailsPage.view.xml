@@ -1,0 +1,22 @@
+<core:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:f="sap.ui.layout.form"
+		controllerName="com.sap.northwind.controller.EmployeeDetailsPage" xmlns:html="http://www.w3.org/1999/xhtml">
+	<Page title="Title">
+		<content>
+			<f:SimpleForm id="idSF">
+				<Label text ="First Name" />
+				<Text text="{FirstName}"/>
+				<Label text ="Last Name" />
+				<Text text="{LastName}"/>
+				<Label text ="Designation" />
+				<Text text="{Title}"/>
+				<Label text ="Address" />
+				<Text text="{Address}"/>
+				<Label text ="City" />
+				<Text text="{City}"/>
+				<Label text ="About" />
+				<Text text="{Notes}"/>
+				<Image src="{PhotoPath}"/>
+			</f:SimpleForm>
+		</content>
+	</Page>
+</core:View>

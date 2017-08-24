@@ -1,0 +1,54 @@
+<core:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m"
+           xmlns:sf="sap.ui.layout.form"
+		controllerName="smax.empReg.view.Fifth_page" xmlns:html="http://www.w3.org/1999/xhtml">
+	<Page title="Contact Details">
+	<headerContent>
+	      <Button text="Submit" type="Accept"/>
+	      <Button text="Save" type="Emphasized"/>
+	      <Button text="Exit" type="Reject"/>
+	</headerContent>
+		<content>
+	        <sf:SimpleForm>
+	           <sf:title>
+	                <core:Title text="Address"/>
+	           </sf:title>
+	           <sf:content>
+	           <Text text="Residentials Address"/>
+	           <Label text="Street No"/>
+	           <Input/>
+	           <Input/>
+	           <Label text="ZIP Code/City"/>
+	           <Input/>
+	           <Input/>
+	           <Label text="Country"/>
+	           
+	           <ComboBox>
+	           <items>
+	           <core:Item text="India"/>
+	           <core:Item text="USA"/>
+	           <core:Item text="UK"/>
+	           </items>
+	           
+	           </ComboBox>
+	           </sf:content>
+	        </sf:SimpleForm>
+	        
+	        <sf:SimpleForm>
+	        <sf:content>
+	        <Text text="Emergency Contact Details"/>
+	        <Label text="Contact Number"/>
+	        <Input/>
+	        
+	        <Label text="RelationShip"/>
+	        <Input/>
+	        </sf:content>
+	        </sf:SimpleForm>
+		</content>
+		<footer>
+		  <Toolbar>
+		       <ToolbarSpacer/>
+		       <Button text="Next" press="Tobank"/>
+		  </Toolbar>
+		</footer>
+	</Page>
+</core:View>

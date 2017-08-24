@@ -1,0 +1,27 @@
+<core:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m"
+		controllerName="smax.empReg.view.Certifications" xmlns:html="http://www.w3.org/1999/xhtml">
+	<Page title="Certifications">
+	<headerContent>
+	      <Button text="Submit" type="Accept"/>
+	      <Button text="Save" type="Emphasized"/>
+	      <Button text="Exit" type="Reject"/>
+	</headerContent>
+		<content>
+	        
+	         <UploadCollection>
+	               <items>
+	               
+	               </items>
+	         </UploadCollection>
+	         <Button text="Upload Now"/>
+		</content>
+		<footer>
+		<Toolbar>
+		    <ToolbarSpacer/>
+		    <Button text="Next" press="Toupload"/>
+		</Toolbar>
+		
+		</footer>
+		
+	</Page>
+</core:View>

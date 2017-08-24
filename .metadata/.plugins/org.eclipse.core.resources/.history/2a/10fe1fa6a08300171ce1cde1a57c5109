@@ -1,0 +1,16 @@
+<core:FragmentDefinition 	xmlns:core="sap.ui.core"
+	xmlns="sap.m">
+	<Dialog>
+	<buttons>
+	<Button text="save"/>
+	<Button text="close"/>
+	
+	
+	</buttons>
+	
+	</Dialog>
+
+
+
+
+</core:FragmentDefinition>

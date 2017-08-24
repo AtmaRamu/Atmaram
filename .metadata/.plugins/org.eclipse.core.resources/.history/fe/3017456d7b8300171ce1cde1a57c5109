@@ -1,0 +1,121 @@
+sap.ui.jsview("zcls_01_vizcharts.First", {
+
+	/** Specifies the Controller belonging to this View. 
+	* In the case that it is not implemented, or that "null" is returned, this View does not have a Controller.
+	* @memberOf zcls_01_vizcharts.First
+	*/ 
+	getControllerName : function() {
+		return "zcls_01_vizcharts.First";
+	},
+
+	/** Is initially called once after the Controller has been instantiated. It is the place where the UI is constructed. 
+	* Since the Controller is given to this method, its event handlers can be attached right away. 
+	* @memberOf zcls_01_vizcharts.First
+	*/ 
+	createContent : function(oController) {
+		var oModel2D = new sap.ui.model.json.JSONModel({
+	          data : [ {
+	            category : 'OP-R-EX-Cash from operating activities',
+	            color: '#8873A2',
+	            date : '2014-04-01',
+	            value : 100
+	          }, {
+	            category : 'OP-R-EX-Cash from operating activities',
+	            color: '#8873A2',
+	            date : '2014-04-02',
+	            value : 30
+	          }, {
+	            category : 'OP-R-EX-Cash from operating activities',
+	            color: '#8873A2',
+	            date : '2014-04-02',
+	            value : 50
+	          }, {
+	            category : 'OP-R-EX-Cash from operating activities',
+	            color: '#8873A2',
+	            date : '2014-04-23',
+	            value : -30
+	          }, {
+	            category : 'FI-R-EX-Cash from operating activities',
+	            color: '#85AA00',
+	            date : '2014-04-23',
+	            value : -20
+	          }, {
+	            category : 'OP-R-EX-Cash from operating activities',
+	            color: '#8873A2',
+	            date : '2014-04-04',
+	            value : -20
+	          }, {
+	            category : 'OP-R-EX-Cash from operating activities',
+	            color: '#8873A2',
+	            date : '2014-04-05',
+	            value : 60
+	          }, {
+	            category : 'OP-P-EX-Other operating payments',
+	            color: '#3A95B3',
+	            date : '2014-04-01',
+	            value : 10
+	          }, {
+	            category : 'OP-P-EX-Other operating payments',
+	            color: '#3A95B3',
+	            date : '2014-04-02',
+	            value : 20
+	          }, {
+	            category : 'OP-P-EX-Other operating payments',
+	            color: '#3A95B3',
+	            date : '2014-04-03',
+	            value : 30
+	          }, {
+	            category : 'OP-P-EX-Other operating paymfents',
+	            color: '#8895B3',
+	            date : '2014-04-04',
+	            value : 40
+	          }, {
+	            category : 'OP-P-EX-Other operating payments',
+	            color: '#3A95B3',
+	            date : '2014-04-05',
+	            value : 50
+	          }, {
+	            category : 'OP-P-EX-Other operating payments',
+	            color: '#3A95B3',
+	            date : '2014-04-06',
+	            value : 60
+	          } ]
+	        });
+
+		  var dataset = new sap.viz.ui5.data.FlattenedDataset({
+
+		              dimensions : [ {
+		                axis : 1,
+		                name : 'Date',
+		                value : "{date}"
+		              }, {
+		                axis : 2,
+		                name : 'Category',
+		                value : "{category}"
+		              } ],
+
+		              measures : [ {
+		                name : 'Cash flow value',
+		                value : '{value}'
+		              } ],
+
+		              data : {
+		                path : "/data"
+		              }
+
+		            });
+
+
+		
+		
+		
+		
+ 		return new sap.m.Page({
+			title: "Title",
+			content: [
+			
+			]
+		});
+	}
+
+});

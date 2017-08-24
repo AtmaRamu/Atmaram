@@ -1,0 +1,84 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta http-equiv='Content-Type' content='text/html;charset=UTF-8'/>
+
+		<script src="resources/sap-ui-core.js"
+				id="sap-ui-bootstrap"
+				data-sap-ui-libs="sap.m,sap.ui.table"
+				data-sap-ui-theme="sap_bluecrystal">
+		</script>
+		<!-- only load the mobile lib "sap.m" and the "sap_bluecrystal" theme -->
+
+		<script>
+				sap.ui.localResources("zcls01_tabledata");
+				var app = new sap.m.App({initialPage:"idFirst1"});
+				/* var page = sap.ui.view({id:"idFirst1", viewName:"zcls01_tabledata.First", type:sap.ui.core.mvc.ViewType.JS});
+				app.addPage(page);
+				app.placeAt("content"); */
+				sap.ui.getCore().attachInit(function() {
+				    //Define some sample data
+				    var aData = [
+				        {lastName: "Dente", name: "Al"},
+				        {lastName: "Friese", name: "Andy"},
+				        {lastName: "Mann", name: "Anita"},
+				        {lastName: "Schutt", name: "Doris"},
+				        {lastName: "Open", name: "Doris"},
+				        {lastName: "Dewit", name: "Kenya"}
+				    ];
+
+				    //Create an instance of the table control
+				    var oTable2 = new sap.ui.table.Table({
+				        visibleRowCount: 7,
+				        firstVisibleRow: 3
+				    });
+				    oTable2.addColumn(new sap.ui.table.Column({
+				        label: new sap.m.Label({text: "Index"}),
+				        template: new sap.m.Text().bindProperty("text", "rowIndex"),
+				        width: "200px"
+				    }));
+				    //Define the columns and the control templates to be used
+				    oTable2.addColumn(new sap.ui.table.Column({
+				        label: new sap.m.Label({text: "Last Name"}),
+				        template: new sap.m.Text().bindProperty("text", "lastName"),
+				        width: "200px"
+				    }));
+
+				    oTable2.addColumn(new sap.ui.table.Column({
+				        label: new sap.m.Label({text: "First Name"}),
+
+				        template: new sap.m.Text().bindProperty("text", "name"),
+				        width: "200px"
+				    }));
+				    
+				   // debugger;
+				    function fnAppenData(count,data, objName){
+				        return Array.apply(null, Array(count)).map(function(obj, i) {
+				            var obj = data[i];
+				            var name = data[i][objName];
+				            data[i][objName] =  (i + 1) + " " + name;
+				            data[i]["rowIndex"] = (i + 1);
+				            var returndata = data[i];
+				            return returndata;
+				            //return {name: names[i % names.length] + i};
+				        });
+				    } 
+				    //Create a model and bind the table rows to this model
+				    var oModel2 = new sap.ui.model.json.JSONModel(fnAppenData(aData.length, aData, "lastName"));
+				    oModel2.setData({modelData: aData});
+				    oTable2.setModel(oModel2);
+				    oTable2.bindRows("/modelData");
+				    //Initially sort the table
+				    oTable2.sort(oTable2.getColumns()[0]);
+				    //Bring the table onto the UI
+				    oTable2.placeAt("content");
+
+				});
+		</script>
+
+	</head>
+	<body class="sapUiBody" role="application">
+		<div id="content"></div>
+	</body>
+</html>

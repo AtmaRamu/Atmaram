@@ -1,0 +1,32 @@
+{
+  "product":[
+  
+                { 
+                
+                
+                  
+           
+            "ProductID": "123",
+            "Price": "321",
+            "ProductName": "Bag",
+            "value":"10",
+            "Plant":"bags limited",
+            "Status":"available"
+              },
+              {
+            "ProductID": "124",
+            "Price": "322",
+            "ProductName":"watch",
+            "value":"7",
+            "Plant":"watch limited",
+            "Status":"unavailable"
+        }
+  
+  
+               ]
+
+
+
+
+
+}

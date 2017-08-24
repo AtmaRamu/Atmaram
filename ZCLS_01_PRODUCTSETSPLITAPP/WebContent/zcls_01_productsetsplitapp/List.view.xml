@@ -1,0 +1,27 @@
+<core:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m"
+		controllerName="zcls_01_productsetsplitapp.List" xmlns:html="http://www.w3.org/1999/xhtml">
+	<Page title="Title">
+		<content>
+				<Toolbar>
+		<content>
+		<SearchField id="idSearch"  showRefreshButton ="true"  liveChange="onChange"/>
+		 <!-- <ComboBox id="idCombo" items="{/Customers}" change="onChange" search="onChange">
+		 
+		 <core:Item text="{CustomerID}" key="{CustomerID}" maxWidth="10"/>
+		 
+		 
+		 </ComboBox>  -->
+		</content>
+		
+		</Toolbar>
+		
+		
+		<List items="{/ProductSet}"  id="idList" >
+		<items>
+		<StandardListItem  title="{ProductID}" description="{Name}" type="Navigation" press="onPress"/>
+		</items>
+		</List>
+	
+		</content>
+	</Page>
+</core:View>

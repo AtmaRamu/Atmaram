@@ -1,0 +1,41 @@
+<core:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m"
+           xmlns:sf="sap.ui.layout.form"
+		controllerName="smax.empReg.view.Third_page" xmlns:html="http://www.w3.org/1999/xhtml">
+	<Page title="Registration Details" id="iddetail">
+	<headerContent>
+	      <Button text="Submit" type="Accept"/>
+	      <Button text="Save" type="Emphasized"/>
+	      <Button text="Exit" type="Reject"/>
+	</headerContent>
+		<content>
+	             <sf:SimpleForm>
+	                 <sf:content>
+	                 <Label text="Name"/>
+	                 <Text text="Govardhan"/>
+	                 <Label text="Department"/>
+	                 <Text text="SAPUI5"/>
+	                 <Label text="Role"/>
+	                 <Text text="Developer"/>
+	                 <Label text="Email"/>
+	                 <Text text="govardhan868@gmail.com"/>
+	                 <Label text="PAN"/>
+	                 <Text text="QWER1234"/>
+	                 <Label text="Country"/>
+	                 <Text text="INDIA"/>
+	                 <Label text="ZIP Code"/>
+	                 <Text text="500072" />
+	                 </sf:content>
+	             
+	             </sf:SimpleForm>
+	    </content>
+	    <footer>
+	     <Toolbar>
+	         <ToolbarSpacer/>
+	         <Button text="Next" press="Next"/>
+	         
+	    </Toolbar>
+	    
+	    </footer>
+	    
+	</Page>
+</core:View>

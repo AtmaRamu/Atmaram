@@ -1,0 +1,15 @@
+<core:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m"
+		controllerName="zcls_01_complex_binding.First" xmlns:html="http://www.w3.org/1999/xhtml">
+	<Page title="Title">
+		<content>
+		
+		<Select id="selStaff" items="{/staff}" change="handleStaffSelect">
+		
+		<core:ListItem key="{city}" text="{city}" />
+		</Select>
+		<Select id="selGender" change="handleGenderSelect"/>
+		<Select id="selPerson" />
+	
+		</content>
+	</Page>
+</core:View>

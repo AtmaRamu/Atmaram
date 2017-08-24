@@ -1,0 +1,18 @@
+<core:FragmentDefinition xmlns="sap.m"
+  xmlns:core="sap.ui.core"
+  controllerName="sap.ui.demo.myFiori.view.Detail">
+  
+<List id="User_Settings" headerText="">
+<items>
+<ActionListItem title="Settings" text="My Account Details" class="list_hover"/>
+<ActionListItem title="Profile"  text="View Profile" class="list_hover"/>
+<ActionListItem title="Payment"  text="Add A Payment Method" class="list_hover"/>
+<ActionListItem title="History"  text="My Booking History" class="list_hover"/>
+<ActionListItem title="Cancel"   text="Ticket Cancellation" class="list_hover"/>
+<ActionListItem title="Stay"     text="Book Accomodation" class="list_hover"/>
+<ActionListItem title="Services" text="Platinum User Services"  class="list_hover"/>
+<ActionListItem title="Reports"  text="My Travel Analytics"     class="list_hover"/>
+</items>
+</List>
+
+</core:FragmentDefinition>

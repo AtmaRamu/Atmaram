@@ -1,0 +1,68 @@
+<core:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:f="sap.ui.layout.form"
+		controllerName="z_cls_product_entitityset.First" xmlns:html="http://www.w3.org/1999/xhtml">
+	<Page title="Title">
+		<content>
+		<!-- <Table items="{/Customers}">
+		
+	<columns>
+			<Column>
+				<Text text="Customer ID" />
+			</Column>
+			<Column>
+				<Text text="Company Name" />
+			</Column>
+			<Column>
+				<Text text="Contact Name" />
+			</Column>
+			<Column>
+				<Text text="Contact Title" />
+			</Column>
+	</columns>
+	
+			<items>
+			<ColumnListItem>
+				<cells>
+					<Text text="{CustomerID}"/>
+					<Text text="{CompanyName}"/>
+					<Text text="{ContactName}"/>
+					<Text text="{ContactTitle}"/>
+					
+				</cells>
+			</ColumnListItem>
+		</items>
+		<core:Item text="{CustomerID}"/>
+		
+		
+		</Table>
+		 -->
+		 <f:SimpleForm id="idSim">
+		  <ComboBox id="idCombo" items="{/Customers}" change="onChange">
+		 
+		 <core:Item text="{CustomerID}" key="{CustomerID}" maxWidth="10"/>
+		 
+		 
+		 </ComboBox> 
+		 
+		 
+		  <f:content>
+		      <Label text="Company Name"/>
+		     <Text text="{CompanyName}"/>
+		     <Label text="Contact Name"/>
+		     <Text text="{ContactName}"/>
+		     <Label text="Contact Title"/>
+		     <Text text="{ContactTitle}"/>
+		    
+		     
+		  
+		  
+		  </f:content>
+		 
+		 
+		 </f:SimpleForm>
+		 
+		 
+		
+	
+		</content>
+	</Page>
+</core:View>

@@ -1,0 +1,22 @@
+
+<core:FragmentDefinition xmlns:core="sap.ui.core"
+  xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="view.search"
+  xmlns:html="http://www.w3.org/1999/xhtml">
+ <!--  <Page  id="r1" showHeader="false" enableScrolling="false">
+<Label text="My Flight" class ="content7"/> -->
+
+  <TileContainer id="container"  class ="content8"
+  tiles="{/My_Tile_Data/0/TileCollection}">
+  
+<StandardTile
+        icon="sap-icon://{icon}"
+        type="{type}"
+        number="{number}"
+        numberUnit="{numberUnit}"
+        title="{title}"
+        info="{info}"
+        infoState="{infoState}" />
+        
+  </TileContainer>
+ <!--  </Page> -->
+</core:FragmentDefinition>

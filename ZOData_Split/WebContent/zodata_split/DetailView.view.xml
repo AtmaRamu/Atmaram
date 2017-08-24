@@ -1,0 +1,26 @@
+<core:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:sf="sap.ui.layout.form"
+		controllerName="zodata_split.DetailView" xmlns:html="http://www.w3.org/1999/xhtml">
+	<Page title="Title">
+		<content>
+		<sf:SimpleForm id="idSF">
+		<sf:content>
+		<Label text="CustomerId"/>
+		<Text text="{CustomerID}"/>
+		<Label text="ContactName"/>
+		<Text text="{ContactName}"/>
+		<Label text="ContactTitle"/>
+		<Text text="{ContactTitle}"/>
+		<Label text="Address"/>
+		<Text text="{Address}"/>
+		
+		
+		
+
+		
+		</sf:content>
+		
+		</sf:SimpleForm>
+	
+		</content>
+	</Page>
+</core:View>

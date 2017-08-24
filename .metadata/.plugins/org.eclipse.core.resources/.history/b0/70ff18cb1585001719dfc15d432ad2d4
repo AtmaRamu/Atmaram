@@ -1,0 +1,21 @@
+<core:FragmentDefinition xmlns="sap.m"
+  xmlns:core="sap.ui.core">
+  <Dialog title="Dynamic Icons" class="sapUiPopupWithPadding" contentWidth="0em"
+  contentHeight="10em">
+  <Page showHeader="false">
+  <content>
+  <Image src="Images/Fiori.jpg" width="25em" height="9em"
+  densityAware="false" align="right" />
+  <Image class="animate_icon" src="Images/heart.png" width="2em"
+  height="2em" densityAware="false" />
+  </content>
+  </Page>
+  <beginButton>
+  <Button type="Accept" text="Accept" press="closeButton">
+  <layoutData>
+  <FlexItemData growFactor="1" />
+  </layoutData>
+  </Button>
+  </beginButton>
+  </Dialog>
+</core:FragmentDefinition>

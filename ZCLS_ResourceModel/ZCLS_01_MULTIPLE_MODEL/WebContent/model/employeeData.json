@@ -1,0 +1,21 @@
+{ 
+ "customer":[
+ 
+            {
+             "CustomerID": "123",
+           
+            "CustomerName": "Ramu"
+            },
+            {
+             "Customer ID": "124",
+           
+            "CustomerName": "Prasad"
+            }
+ 
+ 
+              ]
+
+
+
+
+}

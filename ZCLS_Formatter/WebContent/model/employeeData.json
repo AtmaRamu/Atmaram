@@ -1,0 +1,23 @@
+{
+
+    "RESULT": [
+
+        {   "WERKS": "1102",
+
+            "QTY_PROZ": 4.564,
+
+            "INFO": "Heidelberg"
+
+        },
+
+        {   "WERKS": "1701",
+
+            "QTY_PROZ": 16.857,
+
+            "INFO": "Bern"
+
+        }
+
+    ]
+
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta http-equiv='Content-Type' content='text/html;charset=UTF-8'/>
+
+		<script src="resources/sap-ui-core.js"
+				id="sap-ui-bootstrap"
+				data-sap-ui-libs="sap.m"
+				data-sap-ui-theme="sap_bluecrystal"
+				 data-sap-ui-xx-bindingSyntax="Complex"
+      data-sap-ui-resourceroots='{
+"com.Spiltapp_routing":"./"
+}'
+				>
+		</script>
+		<!-- only load the mobile lib "sap.m" and the "sap_bluecrystal" theme -->
+
+		<script>
+		
+		/*  data-sap-ui-resourceroots='{
+			 "com.Spiltapp_routing":"./"
+			 
+			  data-sap-ui-xx-bindingSyntax="Complex"
+     
+      data-sap-ui-preload='async'
+			 }' */
+		
+		
+			  sap.ui.getCore().attachInit(function (){
+		            new sap.m.Shell("Shell",{
+		                  title:"Routing",
+		                  app: new sap.ui.core.ComponentContainer({
+		                        name : 'com.Spiltapp_routing'
+		                  })
+		            }).placeAt("content");
+		            }) 
+            
+             sap.ui.localResources("view");
+           //   sap.ui.core.ComponentContainer({name : 'com.Spiltapp_routing'}).placeAt("content");
+			 
+			/*var app = new sap.m.App();
+			var page = sap.ui.view({id:"idsplitApp1", viewName:"view.detailpage", type:sap.ui.core.mvc.ViewType.JS});
+			app.addPage(page);
+			app.placeAt("content"); */
+           
+			
+		</script>
+
+	</head>
+	<body class="sapUiBody" role="application">
+		<div id="content"></div>
+	</body>
+</html>

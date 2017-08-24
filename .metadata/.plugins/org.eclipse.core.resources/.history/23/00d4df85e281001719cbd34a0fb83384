@@ -1,0 +1,40 @@
+{
+    "Product": [
+               {
+              "ProductName": "Vegetables"
+               }
+             [
+        {  
+           
+            "ProductID": "Onion",
+            "Price": "Thumbsuo",
+            "ProductName": "Ghee"
+           
+        },
+        {
+              "ProductName": "Vegetables"
+               }
+        {
+            "ProductID": "Peppers ",
+            "Price": "cocokola",
+            "ProductName":"milk"
+          
+        },
+        {
+              "ProductName": "Vegetables"
+               }
+               
+               ]
+        {
+            "ProductID": "Carrot",
+            "Price": "limka",
+            "ProductName": "curd"
+            
+        },
+       
+   
+   
+    ]
+   
+   
+}

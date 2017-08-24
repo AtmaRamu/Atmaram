@@ -1,0 +1,46 @@
+ {
+"sap.app":{
+        "id":"idApp"
+           },
+           
+  "sap.ui5":{
+  
+   "rootView" : "zcls_listaddopera.App",
+		 "routing":{
+			 "config":{
+				 "routerClass":"sap.m.routing.Router",
+				 "viewType":"XML", 
+				 "controlId":"idApp",
+				 "controlAggregation":"pages" 
+			 },
+			 "routes":[
+			         {
+			        	 "pattern":"pageone",
+			        	 "name":"route1",
+			        	 "viewName":"view.Page1",
+			        		 "target":"PAGE1"
+			        	 
+			        	 
+			         }
+			         
+			         
+			         
+			         ],
+			         
+			 "targets":
+			          {
+				 "PAGE1":{
+                    	"viewName":"zcls_listaddopera.First"
+                    }
+                    
+			           }
+		 
+		 }
+  
+  
+  
+  
+  }         
+
+
+}

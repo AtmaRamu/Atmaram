@@ -1,0 +1,27 @@
+{
+	"Employee": {
+				 "Personal":{
+				 	"Name" : "Karunakar Reddy",
+				 	"dept" : "SAP",
+				 	"role" : "Developer",
+				 	"panno" : "BWSPK1185P",
+				 	"email" : "pkarunakar.2006@gmail.com",
+				 	"country" : "uk"
+				 },
+				 "Work": {
+				 	"companies":[{"employer":"HCL Technologies", "designation" : "SAP Portal Consultant", "from":"21/09/2011", "skills":"Webdynpro java, EP"  },
+				 				 {"employer":"Polaris Software Lab", "designation" : "SAP Portal Consultant", "from":"03/01/2011", "skills":"Webdynpro java, EP"  }
+				 				]
+				 },
+				 "Contact":{
+				 	"Emergency" : {"ContactNo":9891181983, "Relationship":"Brother"},
+				 	"Residential": {"Street":"Pragathi Nagar","Pin": 505532, "country": "India"}
+				 },
+				 "Bank":{
+				 	"BenName":"Pendyala Karunakar Reddy",
+				 	"ifsc" : "CITI0000002",
+				 	"AccNo" : "5519906227",
+				 	"AccType": "Savings"
+				 }
+				 }
+}

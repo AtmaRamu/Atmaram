@@ -1,0 +1,184 @@
+{
+	"sap.app": {
+		"id": "com.smax.empreg.routing"
+	},
+	"sap.ui5": {
+		"rootView": "com.smax.empreg.routing.view.App",
+		"routing": {
+			"config": {
+						
+						"viewType" : "XML",
+						"routerClass": "sap.m.routing.Router",
+						"viewPath" : "com.smax.empreg.routing.view",
+						"clearTarget" : "false"
+					},
+			"routes": [
+			           {
+			        	"pattern" : "",
+			        	"name" : "defaultRoute",
+			        	"target" : "empRegPage"
+			           },
+			           {
+				        "pattern" : "splitapp",
+				        "name" : "slitappRoute",
+				        "viewName" : "SplitAppPage",
+				        "controlId" : "idApp",
+				        "controlAggregation" : "pages",
+				        "subroutes" : [{
+				        	"pattern" : "splitapp/",
+					        "name" : "masterRoute",
+					        "viewName" : "LinksPage",
+					        "controlId" : "idSplitApp",
+					        "controlAggregation" : "masterPages",
+					        "subroutes" : [{
+					        	"pattern" : "splitapp/",
+						        "name" : "detailRoute",
+						        "viewName" : "RegistrationDetailsPage",
+						        "controlAggregation" : "detailPages"
+					        }]
+				        }]
+				       },
+				       {
+				    	  "pattern" : "Employee/",
+				    	  "name" : "workRoute",
+				    	  "viewName" : "SplitAppPage",
+				    	  "controlId":"idApp",
+				    	  "controlAggregation" : "pages",
+				    	 "subroutes":[{
+					    	"pattern" : "Employee/WorkExp",
+					    	"name" : "workExpRoute",
+					    	"viewName" : "LinksPage",
+					    	"controlId" : "idSplitApp",
+					        "controlAggregation" : "masterPages",
+					        "subroutes" : [{
+					        	"pattern" : "Employee/WorkExp",
+					        	"name" : "workExpDetailRoute",
+					        	"viewName" : "WorkExpPage",
+					        	"controlAggregation" : "detailPages"
+					        	
+					        }]
+				    	}]
+				       },
+				       {
+					    	  "pattern" : "Employee/",
+					    	  "name" : "workRoute1",
+					    	  "viewName" : "SplitAppPage",
+					    	  "controlId":"idApp",
+					    	  "controlAggregation" : "pages",
+					    	 "subroutes":[{
+						    	"pattern" : "Employee/WorkExp",
+						    	"name" : "workExpRoute1",
+						    	"viewName" : "LinksPage",
+						    	"controlId" : "idSplitApp",
+						        "controlAggregation" : "masterPages",
+						        "subroutes" : [{
+						        	"pattern" : "Employee/WorkExp",
+						        	"name" : "workExpDetailRoute1",
+						        	"viewName" : "WorkExpPage",
+						        	"controlAggregation" : "detailPages",
+						        	"subroutes":[{
+						        		"pattern":"Employee/WorkExp/add",
+						        		"name" : "workExpAddRoute",
+							        	"viewName" : "AddEmployerPage",
+							        	"controlAggregation" : "detailPages"
+						        		
+						        	}]
+						        }]
+					    	}]
+					       },
+					       {
+					    	  "pattern" : "Employee/",
+					    	  "name" : "empContactRoute",
+					    	  "viewName" : "SplitAppPage",
+					    	  "controlId":"idApp",
+					    	  "controlAggregation" : "pages",
+					    	 "subroutes":[{
+						    	"pattern" : "Employee/contacts",
+						    	"name" : "contactsRoute",
+						    	"viewName" : "LinksPage",
+						    	"controlId" : "idSplitApp",
+						        "controlAggregation" : "masterPages",
+						        "subroutes" : [{
+						        	"pattern" : "Employee/contacts",
+						        	"name" : "contactDetailRoute",
+						        	"viewName" : "ContactDetailsPage",
+						        	"controlAggregation" : "detailPages"
+						        	
+						        }]
+					    	}]
+					       },
+					       {
+						    	  "pattern" : "Employee/",
+						    	  "name" : "empBanktRoute",
+						    	  "viewName" : "SplitAppPage",
+						    	  "controlId":"idApp",
+						    	  "controlAggregation" : "pages",
+						    	 "subroutes":[{
+							    	"pattern" : "Employee/Bank",
+							    	"name" : "bankRoute",
+							    	"viewName" : "LinksPage",
+							    	"controlId" : "idSplitApp",
+							        "controlAggregation" : "masterPages",
+							        "subroutes" : [{
+							        	"pattern" : "Employee/Bank",
+							        	"name" : "bankDetailRoute",
+							        	"viewName" : "BankDetailsPage",
+							        	"controlAggregation" : "detailPages"
+							        	
+							        }]
+						    	}]
+						       },
+						       {
+							    	  "pattern" : "Employee/",
+							    	  "name" : "empSummaryRoute",
+							    	  "viewName" : "SplitAppPage",
+							    	  "controlId":"idApp",
+							    	  "controlAggregation" : "pages",
+							    	 "subroutes":[{
+								    	"pattern" : "Employee/Summary",
+								    	"name" : "summaryRoute",
+								    	"viewName" : "LinksPage",
+								    	"controlId" : "idSplitApp",
+								        "controlAggregation" : "masterPages",
+								        "subroutes" : [{
+								        	"pattern" : "Employee/Summary",
+								        	"name" : "summaryDetailRoute",
+								        	"viewName" : "SummaryPage",
+								        	"controlAggregation" : "detailPages"
+								        	
+								        }]
+							    	}]
+							       }
+			           ],
+			"targets": {
+						 "empRegPage":{
+							 "viewName" : "EmpRegistrationPage",
+							 "controlAggregation" : "pages",
+							 "controlId" : "idApp"
+							
+						 },
+						 "splitAppPage":{
+							 "viewName" : "SplitAppPage",
+							 "controlAggregation" : "pages",
+							 "controlId" : "idApp"
+							
+						 },
+						 "masterPage" : {
+							 "viewName" : "LinkPage",
+							 "controlId" : "idSplitApp",
+							 "controlAggregation" : "masterPages"
+							 
+						 },
+						 "detailPage" : {
+							 "viewName" : "DetailPage",							
+							 "controlAggregation" : "detailPages"
+						 },
+						 "workExpDetailPage" : {
+							 "viewName" : "WorkExpPage",							 
+							 "controlAggregation" : "masterPages"
+						 }
+						
+						}
+		}
+	}
+}

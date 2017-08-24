@@ -1,0 +1,60 @@
+<core:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m"
+         xmlns:sf="sap.ui.layout.form"
+		controllerName="smax.empReg.view.Emplyoee_reg" xmlns:html="http://www.w3.org/1999/xhtml">
+	<Page title="Title">
+		
+		<content>
+	     <sf:SimpleForm>
+	     <sf:title>
+	     <core:Title text="Please Enter Emplyoee Details"/>
+	     </sf:title>
+	     
+	     
+	     <sf:content>
+	     <Label text="Emplyoee Name"/>
+	     <Input id="idempname"/>
+	     <Label text="Department"/>
+	     <ComboBox>
+	     <items>
+	          <core:Item text="SAPUI5"/>
+	          <core:Item text="JAVA"/>
+	          <core:Item text="ORACLE"/>
+	     </items>
+	     </ComboBox>
+	     <Label text="Role"/>
+	     <ComboBox>
+	     <items>
+	          <core:Item text="Developer"/>
+	          <core:Item text="Manager"/>
+	          <core:Item text="Project Manager"/>
+	     </items>
+	     </ComboBox>
+	     <Label text="Email"/>
+	     <Input id="idemail"/>
+	     <Label text="PAN"/>
+	     <Input id="idpan"/>
+	     <Label text="Country"/>
+	     <ComboBox>
+	          <items>
+	          <core:Item text="India"/>
+	          <core:Item text="USA"/>
+	          <core:Item text="UK"/>
+	          <core:Item text="JAPAN"/>
+	          </items>
+	     </ComboBox>
+	     <Label text="ZIP Code"/>
+	     <Input id="idzip"/>
+	     
+	     </sf:content>
+	     </sf:SimpleForm>
+		</content>
+				<footer>
+			<Toolbar>
+				<ToolbarSpacer/>
+				<Button text="Register" press="GoNext"/>
+				
+			</Toolbar>
+		</footer>
+		
+	</Page>
+</core:View>

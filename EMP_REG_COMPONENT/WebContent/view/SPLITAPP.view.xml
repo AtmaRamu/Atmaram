@@ -1,0 +1,25 @@
+<core:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m"
+		controllerName="smax.empReg.view.SPLITAPP" xmlns:html="http://www.w3.org/1999/xhtml"
+		xmlns:sf="sap.ui.layout.form">
+	<SplitApp id="idSplitapp">
+	          <!-- <masterPages>
+	         	<mvc:XMLView viewName="smax.empReg.view.Second_page"/>
+	         </masterPages>
+	         
+              <detailPages>
+              <mvc:XMLView viewName="smax.empReg.view.Third_page" id="idreg"/>
+              <mvc:XMLView viewName="smax.empReg.view.Fourth_page" id="idwork"/>
+              <mvc:XMLView viewName="smax.empReg.view.Fifth_page" id="idcontact"/>
+              <mvc:XMLView viewName="smax.empReg.view.Bankdetails" id="idbank"/>
+              <mvc:XMLView viewName="smax.empReg.view.Certifications" id="idcertifiction"/>
+              <mvc:XMLView viewName="smax.empReg.view.Upload_documents1" id="idupload"/>
+              <mvc:XMLView viewName="smax.empReg.view.Summary" id="idsummary"/>
+              
+              
+              </detailPages>  -->
+              	
+	
+	
+	
+	</SplitApp>
+</core:View>

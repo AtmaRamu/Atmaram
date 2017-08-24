@@ -1,0 +1,19 @@
+<core:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m"
+		controllerName="zodata_split.Split" xmlns:html="http://www.w3.org/1999/xhtml">
+	
+		<SplitApp>
+		<masterPages>
+		
+		<mvc:XMLView  id="idMaster" viewName="zodata_split.MasterView"/>
+<!-- 		<mvc:XMLView  id="idDetail" viewName="zodata_split.DetailView"/>  -->
+		
+		</masterPages>
+		<detailPages>
+		
+ 		<mvc:XMLView  id="idDetail" viewName="zodata_split.DetailView"/>  
+		
+		</detailPages>
+		
+		</SplitApp>
+	
+</core:View>

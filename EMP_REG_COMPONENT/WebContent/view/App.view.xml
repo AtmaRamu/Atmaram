@@ -1,0 +1,9 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m">
+   <App id="idApp">
+      <!-- <pages>
+          <mvc:XMLView viewName="smax.empReg.view.Emplyoee_reg"/>
+          <mvc:XMLView viewName="smax.empReg.view.SPLITAPP" id="idsplit"/>
+      </pages> -->
+   </App>
+
+</mvc:View>

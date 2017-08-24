@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Employee Details</title>
+<script>
+	function setEmpData(){
+		
+	}
+</script>
+</head>
+<body>
+	Register   <button>Save</button> <button>Submit</button><button>Exit</button>	
+	
+	 
+	<fieldset>
+    <legend>Employee Details</legend>
+    Name: <br>
+    <p id="empName"></p><br>
+   <br>
+   
+    Department: <br>
+    <p id="dept"></p><br>
+  
+   
+    Role: <br>
+    <p id="role"></p><br>
+   
+   
+   Email: <br>
+    <p id="email"></p><br>
+  
+   PAN No.: <br>
+    <p id="panNo"></p><br>
+ 
+   
+   Country: <br>
+    <p id="country"></p><br>
+   <br>
+   
+   Pin Code: <br>
+    <p id="pin"></p><br>
+   <br>
+   
+  </fieldset>
+  <script>
+  debugger;
+  		document.getElementById("empName").innerText=localStorage.getItem("empName");
+  		document.getElementById("dept").innerText=localStorage.getItem("dept");
+  		document.getElementById("role").innerText=localStorage.getItem("role");
+  		document.getElementById("email").innerText=localStorage.getItem("email");
+  		document.getElementById("panNo").innerText=localStorage.getItem("panNo");
+  		document.getElementById("country").innerText=localStorage.getItem("country");
+  		document.getElementById("pin").innerText=localStorage.getItem("pin");
+  </script>
+	
+</body>
+</html>

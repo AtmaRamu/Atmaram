@@ -1,0 +1,30 @@
+<core:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m"
+		controllerName="zcls_formatter.First" xmlns:html="http://www.w3.org/1999/xhtml">
+	<Page title="Title">
+		<content>
+		<!-- <TileContainer id="container" tiles="{'MAIN>/RESULT' ,formatter:'util.my.Formatter.getName()'}" allowAdd="false" editable="false">
+		 <StandardTile number     = "{MAIN>QTY_PROZ}"
+
+                          numberUnit = "%"
+
+                          info       = "{MAIN>INFO}"
+
+                          icon       = "sap-icon://building"
+                         
+                          />
+		 
+		
+		</TileContainer> -->
+		<!-- <Button text="{/text1} and {/text2}"/> -->
+		
+		<!-- <Button text="{path:'/text3',formatter:'.myFormatter'}"/> -->
+		
+		 <Button text="{path:'/text2',formatter:'.myFormatter'}"/> 
+		<!-- ,formatter:'jQuery.sap.formatMessage' -->
+		<!-- <Button  text="{parts:['/text1','/text2','/text3'],formatter:'jQuery.sap.formatMessage'}"/> -->
+		
+		<Button  text="{parts:['/text1','/text2','/text3']}"/>
+	
+		</content>
+	</Page>
+</core:View>

@@ -1,0 +1,23 @@
+{
+"Record":
+    [
+       {"recog":"adults","name":"ritesh joshi","age":"30","mob":2222222222 ,"town":"gaya"},
+
+       {"recog":"seniors","name":"raj singh","age":"45","mob":3333333333 ,"town":"bathinda"},
+       
+       {"recog":"kids","name":"patlu","age":"9","mob":4444444444 ,"town":"aurangabad"},
+       
+         {"recog":"kids","name":"daya","age":"10","mob":7777777777 ,"town":"ranchi"},
+         
+          {"recog":"seniors","name":"dharma raju","age":"56","mob":9999999999 ,"town":"bodhgaya"},
+          
+             {"recog":"kids","name":"chuni","age":"5","mob":10000000000,"town":"gaya"},
+             
+           {"recog":"adults","name":"nikhil kumar","age":"25","mob":3211111111 ,"town":"mumbai"},
+            
+                    {"recog":"kids","name":"piku","age":"7","mob":2828282828 ,"town":"goregaon"},
+                    
+             {"recog":"adults","name":"prashant kumar","age":"26","mob":2929292929 ,"town":"patana"}
+     ]
+
+}

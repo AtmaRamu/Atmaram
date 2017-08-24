@@ -1,0 +1,74 @@
+{
+    "Product": [
+        {   
+           
+            "ProductID": "123",
+            
+            "Name": "Bag",
+            "Quantity":1;
+            "value":"1000",
+            "Total":5000,
+            "InValue":"INCREMENT",
+            "tax":"5%"
+        },
+        {
+            
+            "ProductID": "123",
+            
+            "Name": "Bag",
+            "Quantity":1;
+            "value":"1000",
+            "Total":5000,
+            "InValue":"INCREMENT",
+            "tax":"5%"
+        },
+        {,
+            
+            "ProductID": "123",
+            
+            "Name": "Bag",
+            "Quantity":1;
+            "value":"1000",
+            "Total":5000,
+            "InValue":"INCREMENT",
+            "tax":"5%"
+        },
+        {
+         
+            "ProductID": "123",
+            
+            "Name": "Bag",
+            "Quantity":1;
+            "value":"1000",
+            "Total":5000,
+            "InValue":"INCREMENT",
+            "tax":"5%"
+        },
+    {  
+            "ProductID": "123",
+            
+            "Name": "Bag",
+            "Quantity":1;
+            "value":"1000",
+            "Total":5000,
+            "InValue":"INCREMENT",
+            "tax":"5%"
+        },
+   
+    {  
+            "ProductID": "123",
+            
+            "Name": "Bag",
+            "Quantity":1;
+            "value":"1000",
+            "Total":5000,
+            "InValue":"INCREMENT",
+            "tax":"5%"
+        }
+   
+   
+   
+    ]
+   
+   
+}

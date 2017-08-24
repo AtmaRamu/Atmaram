@@ -1,0 +1,71 @@
+<core:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m"
+           xmlns:sf="sap.ui.layout.form"
+		controllerName="smax.empReg.view.Summary" xmlns:html="http://www.w3.org/1999/xhtml">
+	<Page title="Summary" >
+	
+	     <headerContent>
+	     <Button text="Submit" type="Accept"/>
+	     <Button text="save" type="Emphasized"/>
+	     <Button text="Exit" type="Reject"/>
+	     </headerContent> 
+		<content>
+	      <IconTabBar>
+	          <items>
+	          
+	          <IconTabFilter
+				text="Register Details">
+			  </IconTabFilter>
+			<IconTabSeparator />
+			
+			  <IconTabFilter
+				text="Work Experience">
+			  </IconTabFilter>
+			  <IconTabSeparator />
+			  
+			  <IconTabFilter
+				text="Contact Details">
+			  </IconTabFilter>
+			  <IconTabSeparator />
+			  
+			  <IconTabFilter
+				text="Bank Details">
+			  </IconTabFilter>
+			  <IconTabSeparator />
+			  
+			  <IconTabFilter
+				text="Summury">
+			  </IconTabFilter>
+	          </items>
+	      </IconTabBar>
+	      
+	      <sf:SimpleForm>
+	      <sf:title>
+	        <core:Title text="Please Enter Emplyoee Details"/>
+	      </sf:title>
+	      <sf:content>
+	      <Label text="Emplyoee Name"/>
+	      <Input value="Govardhan"/>
+	      <Label text="Department"/>
+	      <Input value="SAPUI5"/>
+	      <Label text="Role"/>
+	      <Input value="Developer"/>
+	      <Label text="Email"/>
+	      <Input value="govardhan868@gmail.com"/>
+	      <Label text="PAN"/>
+	      <Input value="QWER1234"/>
+	      <Label text="Country"/>
+	      <Input value="India"/>
+	      <Label text="ZIP Code"/>
+	      <Input value="500072"/>
+	      </sf:content>
+	      </sf:SimpleForm>
+	      
+		</content>
+		<footer>
+		     <Toolbar>
+		         <ToolbarSpacer/>
+		         <Button text="Next"/>
+		     </Toolbar>
+		</footer>
+	</Page>
+</core:View>

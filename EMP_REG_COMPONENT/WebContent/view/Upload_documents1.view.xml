@@ -1,0 +1,22 @@
+<core:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m"
+		controllerName="smax.empReg.view.Upload_documents1" xmlns:html="http://www.w3.org/1999/xhtml">
+	<Page title="Upload Personal Documents">
+	<headerContent>
+	      <Button text="Submit" type="Accept"/>
+	      <Button text="Save" type="Emphasized"/>
+	      <Button text="Exit" type="Reject"/>
+	</headerContent>
+		<content>
+	            <UploadCollection>
+	            </UploadCollection>
+	            <Button text="Upload now"/>
+		</content>
+		        <footer>
+		                <Toolbar>
+		                    <ToolbarSpacer/>
+		                    <Button text="Next" press="Tosummary"/>
+		                </Toolbar>
+		        
+		        </footer>
+	</Page>
+</core:View>

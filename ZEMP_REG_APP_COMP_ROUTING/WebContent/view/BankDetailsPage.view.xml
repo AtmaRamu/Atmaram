@@ -1,0 +1,30 @@
+<core:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:f="sap.ui.layout.form"
+		controllerName="com.smax.empreg.routing.controller.BankDetailsPage" xmlns:html="http://www.w3.org/1999/xhtml">
+	<Page title="Bank Details">
+		<content>
+			<f:SimpleForm layout="ResponsiveGridLayout"
+			              emptySpanL="4"
+			              emptySpanM="4"
+			              id="empBankDetailsForm"
+			              >
+				<f:content>
+					<Label text="Beneficiary Name"/>
+					<Input type="text" placeholder="As per Bank Records" value="{BenName}"/>
+					<Label text="IFSC Code"/>
+					<Input type="text" value="{ifsc}"/>
+					<Label text="Account No."/>
+					<Input type="text" value="{AccNo}"/>
+					<Label text="Confirm Account No."/>
+					<Input type="text" value="{AccNo}"/>
+					<Label text="Acount Type"/>
+					<Select selectedKey="{AccType}">
+						<items>
+						<core:Item text="Savings"></core:Item>
+						<core:Item text="Current"></core:Item>
+						</items>
+					</Select>
+				</f:content>
+			</f:SimpleForm>			
+		</content>
+	</Page>
+</core:View>

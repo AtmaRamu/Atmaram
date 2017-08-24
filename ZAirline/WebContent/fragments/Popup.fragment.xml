@@ -1,0 +1,20 @@
+<core:FragmentDefinition xmlns="sap.m"
+  xmlns:core="sap.ui.core"
+  controllerName="sap.ui.demo.myFiori.view.Notes">
+  
+  <Dialog title="My Popup" type="Message">
+  <VBox >
+  <items>
+  <Label text="Comments" />
+            <TextArea width="100%" height="100%"></TextArea>
+  </items>
+  </VBox>
+  <beginButton>
+  <Button text="Ok" press="onDialogokButton" />
+  </beginButton>
+  <endButton>
+  <Button text="Cancel" press="onDialogCloseButton" />
+  </endButton>
+  </Dialog>
+  
+</core:FragmentDefinition>

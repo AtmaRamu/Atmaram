@@ -1,0 +1,90 @@
+{
+  "My_Tile_Data": [
+ 
+  
+  
+ 
+  {
+  "icon" : "flight",
+  "number" : "1",
+  "numberUnit" : "Flights",
+  "title" : "Flights Available",
+  "info" : "Departing in next 12 Hours"
+  },
+  {
+  "icon" : "inbox",
+  "number" : "3",
+  "title" : "Ticket Status",
+  "info" : "Waiting List",
+  "infoState" : "Error"
+  },
+  {
+  "type" : "Create",
+  "icon" : "calendar",
+  "title" : "Book Tickets",
+  "info" : "Seats Available",
+  "infoState" : "Success"
+  },
+  {
+  "icon" : "loan",
+  "number" : "180",
+  "numberUnit" : "euro",
+  "title" : "Refund Tickets",
+  "info" : "1 day ago"
+  },
+  {
+  "icon" : "loan",
+  "number" : "2500",
+  "numberUnit" : "euro",
+  "title" : "My Wallet",
+  "info" : "6 Transactions"
+  },
+  {
+  "icon" : "inbox",
+  "type" : "Monitor",
+  "title" : "Saved Tickets"
+  },
+  {
+  "icon" : "meal",
+  "type" : "Monitor",
+  "title" : "Food"
+  },
+  {
+  "icon" : "stethoscope",
+  "number" : "",
+  "title" : "Travel Insurance",
+  "info" : "Expired",
+  "infoState" : "Error"
+  },
+  {
+  "icon" : "pie-chart",
+  "number" : "8",
+  "title" : "My Travels Overview",
+  "info" : "8 This month",
+  "infoState" : "Warning"
+  },
+  {
+  "icon" : "cart",
+  "number" : "",
+  "numberUnit" : "",
+  "title" : "Shop With Us",
+  "info" : "Over 2000 items",
+  "infoState" : "Success"
+  },
+  {
+  "icon" : "factory",
+  "number" : "8",
+  "numberUnit" : "Services",
+  "title" : "Other Services",
+  "info" : "",
+  "infoState" : ""
+  },
+  {
+  "icon" : "calendar",
+  "title" : "Travel Planner"
+  }
+  ]
+  
+  ]
+}
+

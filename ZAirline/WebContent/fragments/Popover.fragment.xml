@@ -1,0 +1,29 @@
+<core:FragmentDefinition
+  xmlns="sap.m"
+  xmlns:core="sap.ui.core">
+  
+<Popover
+    title="Bince"
+    class="sapUiPopupWithPadding"
+    placement="Left" >
+<Image src="Images/bince.jpg" width="10em" height="10em" densityAware="false" />
+    <footer>
+      <Bar>
+      <contentLeft>
+<Button
+            text="Profile"/> 
+      </contentLeft>
+        <contentMiddle>
+          <Button
+            text=""
+            icon="sap-icon://email"
+            press="handleEmailPress" />
+        </contentMiddle>
+        <contentRight>
+        <Button text="Logout" press="handleLogOff" type="Reject"></Button>
+        </contentRight>
+      </Bar>
+    </footer>
+  </Popover>
+  
+</core:FragmentDefinition>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="EMP_REG_COMPONENT">
+        <wb-resource deploy-path="/" source-path="/WebContent" tag="defaultRootSource"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src"/>
+        <property name="context-root" value="EMP_REG_COMPONENT"/>
+        <property name="java-output-path" value="/EMP_REG_COMPONENT/build/classes"/>
+    </wb-module>
+</project-modules>

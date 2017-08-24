@@ -1,0 +1,27 @@
+<core:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:f="sap.ui.layout.form"
+		controllerName="zcls_01_multiple_model.First" xmlns:html="http://www.w3.org/1999/xhtml">
+	<Page title="Title">
+		<content>
+		<f:SimpleForm id="idSimform1">
+		
+		<Label text="Customer Id"/>
+		<Text text="{CustomerID}"/>
+		
+		<Label text="Customer Name"/>
+		<Input value="{CustomerName}"/>
+		
+		
+		<Label text="Product Id"/>
+		<Input value="{M2>ProductID}"/>
+		
+		<Label text="Product Name"/>
+		<Text text="{M2>ProductName}"/>
+		
+		
+		</f:SimpleForm>
+		
+		
+	
+		</content>
+	</Page>
+</core:View>

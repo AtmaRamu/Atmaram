@@ -1,0 +1,47 @@
+<core:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:f="sap.ui.layout.form"
+
+		controllerName="zcls01_loan_project.First" xmlns:html="http://www.w3.org/1999/xhtml">
+	<Page title="Amount require for Loan" class="sapUiContentPadding">
+	<content>
+	<VBox alignItems="Center" >
+	<f:SimpleForm width="150%" height="100%">
+	<Label/>
+	<HBox>
+	<Label text="Loan Amount :    "/>
+		<Input value ="100000" id="id2"     width= "100%"/>
+		</HBox>
+		<Label/>
+			<Label/>
+		<SegmentedButton>
+		<items>
+		
+						<SegmentedButtonItem text="3months" press="onPress"/>
+						<SegmentedButtonItem text="6months" press="onPress6"/>
+						<SegmentedButtonItem text="10months" press="onPress10"/>
+		
+		</items>
+		
+		</SegmentedButton>
+		
+		
+		
+				
+			
+					<!-- <Button text="3months" press="onPress" width= "40%"/>
+					<Button text="6months" press="onPress6" width= "40%"/>
+					<Button text="10months" press="onPress10" width= "40%"/> -->
+				<Label></Label>
+				<Label></Label>
+				<HBox>
+			<Label text="EMI for monthly:  "/>
+			<Text  id="id1"/>
+			</HBox>
+			<Button text="Apply Loan"/>
+			</f:SimpleForm>
+			
+			</VBox>
+		
+	
+		</content>
+	</Page>
+</core:View>

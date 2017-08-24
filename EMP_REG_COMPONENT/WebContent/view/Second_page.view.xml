@@ -1,0 +1,25 @@
+<core:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m"
+		controllerName="smax.empReg.view.Second_page" xmlns:html="http://www.w3.org/1999/xhtml">
+	<Page title="Info" id="idmaster">
+		<content>
+	          <List>
+	             <items>
+	             <StandardListItem
+				          title="Registration Details" type="Navigation" press="Toreg"/>
+				          <StandardListItem
+				          title="Work Experience" type="Navigation" press="Towork"/>
+				          <StandardListItem
+				          title="Contact Details" type="Navigation" press="Tocontact"/>
+				          <StandardListItem
+				          title="Bank Details" type="Navigation" press="Tobank"/>
+				          <StandardListItem
+				          title="Certifications" type="Navigation" press="Tocertification"/>
+				          <StandardListItem
+				          title="Personal Documents" type="Navigation" press="Toupload"/>
+				          <StandardListItem
+				          title="Summary" type="Navigation" press="Tosummary"/>
+	             </items>
+	          </List>
+		</content>
+	</Page>
+</core:View>

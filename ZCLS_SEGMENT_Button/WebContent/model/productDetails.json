@@ -1,0 +1,107 @@
+{
+	"Product": [{
+			"ProductName": "Vegetables"
+		},
+		[{
+
+				"ProductID": "Onion",
+				"Price": "Thumbsuo",
+				"ProductName": "Ghee"
+
+			},
+			{
+				"ProductName": "Vegetables"
+			},
+			{
+				"ProductID": "Peppers ",
+				"Price": "cocokola",
+				"ProductName": "milk"
+
+			},
+			{
+				"ProductName": "Vegetables"
+			}
+
+		],
+		{
+			"ProductID": "Carrot",
+			"Price": "limka",
+			"ProductName": "curd"
+
+		}
+
+
+
+	]
+
+
+}
+
+/*
+
+ {
+ 	"name": "John",
+ 	"age": 30,
+ 	"cars": [{
+ 			"name": "Ford",
+ 			"models": ["Fiesta", "Focus", "Mustang"]
+ 		},
+ 		{
+ 			"name": "BMW",
+ 			"models": ["320", "X3", "X5"]
+ 		},
+ 		{
+ 			"name": "Fiat",
+ 			"models": ["500", "Panda"]
+ 		},
+ 		{
+ 			"name": "John",
+ 			"age": 30,
+ 			"cars": [{
+ 					"name": "Ford",
+ 					"models": ["Fiesta", "Focus", "Mustang"]
+ 				},
+ 				{
+ 					"name": "BMW",
+ 					"models": ["320", "X3", "X5"]
+ 				},
+ 				{
+ 					"name": "Fiat",
+ 					"models": ["500", "Panda"]
+ 				}
+ 			]
+
+ 		}
+ 	]
+ }
+ */
+ 
+ 
+ {
+"productData":[
+                 {  
+           
+           
+            "ProductName": "Vegetables"
+           
+        },
+         {  
+           
+           
+            "ProductName": "Beveages"
+           
+        },
+        {  
+           
+           
+            "ProductName": "Milksproducts"
+           
+        }
+
+    ]
+
+
+
+
+
+}

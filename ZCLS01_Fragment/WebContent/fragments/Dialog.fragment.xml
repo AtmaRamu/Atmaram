@@ -1,0 +1,15 @@
+<core:FragmentDefinition 	xmlns:core="sap.ui.core"
+	xmlns="sap.m">
+	<Dialog title="Dialog from fragment" >
+		<content>
+			<Text text="XML fragment for UI5 Application" />
+		</content>
+		<endButton>
+		 	<Button text="Close It" press="closeDialog" />
+		</endButton>
+	</Dialog>
+
+
+
+
+</core:FragmentDefinition>

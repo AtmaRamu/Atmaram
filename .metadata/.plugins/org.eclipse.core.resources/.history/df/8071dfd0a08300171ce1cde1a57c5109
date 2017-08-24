@@ -1,0 +1,10 @@
+<core:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m"
+		controllerName="zcls01_fragment.First" xmlns:html="http://www.w3.org/1999/xhtml">
+	<Page title="Title">
+		<content>
+		
+		<!-- <Button text="open" press="onPress"/> -->
+	<core:Fragment fragmentName="fragments.panel" type="XML"> </core:Fragment>
+		</content>
+	</Page>
+</core:View>

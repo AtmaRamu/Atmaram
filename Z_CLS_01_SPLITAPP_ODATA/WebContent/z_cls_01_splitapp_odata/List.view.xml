@@ -1,0 +1,24 @@
+<core:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m"
+		controllerName="z_cls_01_splitapp_odata.List" xmlns:html="http://www.w3.org/1999/xhtml">
+	<Page title="Title">
+		<content>
+		<List items="{/Customers}">
+		<items>
+		<StandardListItem title="{CustomerID}" description="{Address}" type="Navigation" press="onPress" id="idStand"/>
+		
+		
+		
+		
+	
+		
+		
+	
+		
+		</items>
+		
+		
+		</List>
+	
+		</content>
+	</Page>
+</core:View>

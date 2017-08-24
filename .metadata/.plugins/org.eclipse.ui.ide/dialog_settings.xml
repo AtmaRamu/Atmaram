@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="ExternalProjectImportWizard">
+		<item value="false" key="WizardProjectsImportPage.STORE_NESTED_PROJECTS"/>
+		<item value="false" key="WizardProjectsImportPage.STORE_COPY_PROJECT_ID"/>
+		<item value="false" key="WizardProjectsImportPage.STORE_ARCHIVE_SELECTED"/>
+		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
+			<item value="D:\User2\ramu\BarGraph (3)"/>
+			<item value="D:\User2\ramu\ZEMP_REG_APP_COMP_ROUTING"/>
+			<item value="D:\User2\ramu\ZJS_LOCALSTORAGE"/>
+			<item value="D:\User2\ramu\ZOData_Split"/>
+			<item value="H:\NAVIGATION2"/>
+			<item value="H:\NAVIGATION"/>
+			<item value="H:\ZROSH_DUPLICATE_COUNTRIES"/>
+			<item value="C:\Users\ramu\Downloads"/>
+			<item value="C:\Users\ramu\Desktop\P_PROJECT1_EMPREGFRM"/>
+			<item value="C:\Users\ramu\Desktop\CRUDOPERATIONS-PRODUCT"/>
+			<item value="C:\Users\ramu\Desktop\EMP_REG_COMPONENT"/>
+			<item value="G:\"/>
+			<item value="C:\Users\ramu\Desktop\ZOdata_UPDATE"/>
+			<item value="C:\Users\ramu\Desktop\ZODATA_LIST_SPLITAPP"/>
+			<item value="C:\Users\ramu\Desktop\ZODATA_2"/>
+		</list>
+		<list key="WizardProjectsImportPage.STORE_ARCHIVES">
+			<item value=""/>
+		</list>
+	</section>
+	<section name="BasicNewProjectResourceWizard">
+	</section>
+</section>

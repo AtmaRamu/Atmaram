@@ -1,0 +1,21 @@
+<core:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m"
+		controllerName="zairline.Master" xmlns:html="http://www.w3.org/1999/xhtml">
+	<Page title="Title">
+		
+ <subHeader>
+<Bar>
+<contentLeft>
+<SearchField
+search="handleSearch"
+width="100%" >
+</SearchField>
+</contentLeft>
+</Bar>
+</subHeader>
+  <core:Fragment fragmentName="fragments.Sidepanel" type="XML" />
+  <core:Fragment fragmentName="MainContent.Sidepanel" type="XML" />
+		<!-- <core:Fragment fragmentName="fragments.Tiles" type="XML"> </core:Fragment> --> 
+	
+		
+	</Page>
+</core:View>

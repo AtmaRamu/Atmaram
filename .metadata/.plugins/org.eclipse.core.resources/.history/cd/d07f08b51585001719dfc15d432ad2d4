@@ -1,0 +1,12 @@
+<core:FragmentDefinition xmlns="sap.m"
+  xmlns:core="sap.ui.core"
+  controllerName="sap.ui.demo.myFiori.view.Detail">
+<List id="Menu" headerText="" >
+<items>
+<ActionListItem title="Flights" text="Book Flights" class="list_hover"/>
+<ActionListItem title="My Bookings" text="My Bookings" class="list_hover"/>
+<ActionListItem title="Status" text="Flight Status" class="list_hover"/>
+<ActionListItem title="Refund" text="Refund Tickets" class="list_hover"/>
+</items>
+</List>
+</core:FragmentDefinition>

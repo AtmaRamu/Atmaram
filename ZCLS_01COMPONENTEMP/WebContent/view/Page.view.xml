@@ -1,0 +1,23 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m">
+<Page>
+
+<content>
+<Button text="Save"/>
+
+
+</content>
+
+
+
+</Page>
+ 
+<!-- <App>
+<pages>
+<mvc:XMLView viewName="view.Page2"/>
+
+
+</pages>
+
+
+</App> -->
+</mvc:View>

@@ -1,0 +1,40 @@
+<core:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m"
+           xmlns:sf="sap.ui.layout.form"
+		controllerName="smax.empReg.view.Bankdetails" xmlns:html="http://www.w3.org/1999/xhtml">
+	<Page title="Bank Details">
+	<headerContent>
+	      <Button text="Submit" type="Accept"/>
+	      <Button text="Save" type="Emphasized"/>
+	      <Button text="Exit" type="Reject"/>
+	</headerContent>
+		<content>
+	         <sf:SimpleForm>
+	              <sf:content>
+	              <Text text="Bank Information"/>
+	              <Label text="Benificiary Name" />
+	              <Input placeholder="As per bank records"/>
+	              <Label text="IFSC Code"/>
+	              <Input width="50%"/>
+	              <Label text="Account Number"/>
+	              <Input width="50%"/>
+	              <Label text="Conform Account Number"/>
+	              <Input width="50%"/>
+	              <Label text="Account Type"/>
+	              <ComboBox>
+	                   <items>
+	                   <core:Item text="Saving"/>
+	                   <core:Item text="Current"/>
+	                   </items>
+	              </ComboBox>
+	              </sf:content>
+	         </sf:SimpleForm>
+		</content>
+		<footer>
+		       <Toolbar>
+		               <ToolbarSpacer/>
+		               <Button text="Next" press="Tocertification"/>
+		       </Toolbar>
+		</footer>
+		
+	</Page>
+</core:View>

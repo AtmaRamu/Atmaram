@@ -1,0 +1,27 @@
+<core:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m"
+		controllerName="zcls01_datapassing.First" xmlns:html="http://www.w3.org/1999/xhtml">
+	<Page title="Title">
+		<content>
+		
+		<Label text="Employee name"/>
+		<Input id="idInput1"/>
+		
+		<Label text="First name"/>
+		<Input id="idInput2"/>
+		
+		<Button text="Save" press="onPress"/>
+		
+		<!-- <ComboBox>
+		<items>
+		<core:ListItem> </core:ListItem>
+		
+		
+		</items>
+		
+		
+		
+		</ComboBox> -->
+	
+		</content>
+	</Page>
+</core:View>

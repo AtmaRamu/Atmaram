@@ -1,0 +1,27 @@
+<core:FragmentDefinition xmlns="sap.m"
+	xmlns:f="sap.ui.layout.form" xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc"
+	xmlns:html="http://www.w3.org/1999/xhtml" xmlns:l="sap.ui.layout">
+	<Panel width="auto" expandable="true" expanded="true" expand="onExpand"
+		class="sapUiResponsiveMargin">
+		<headerToolbar>
+			<Toolbar>
+				<Label text="Panel From Fragment" />
+			</Toolbar>
+		</headerToolbar>
+ 
+		<f:SimpleForm layout="ResponsiveGridLayout" minWidth="1024"
+			columnsM="2" columnsL="2" labelSpanM="4" labelSpanL="4" editable="true">
+			<f:content>
+				<core:Title text="Some Sample Data" />
+				<Label text="Customer Name" />
+				<Text text="Dr.Robert" />
+				<Label text="Customer Number" />
+				<Text text="111000" />
+				<core:Title text="" />
+				<Label text="Country" />
+				<Text text="Germany" />
+			</f:content>
+		</f:SimpleForm>
+ 
+	</Panel>
+</core:FragmentDefinition>

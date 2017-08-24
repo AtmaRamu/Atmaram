@@ -1,0 +1,37 @@
+<core:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m"
+		controllerName="navigation.MAIN" xmlns:html="http://www.w3.org/1999/xhtml">
+	<Page title="Title">
+		<content>
+		<ComboBox items="{/Customers}" change="onchange">
+		<core:Item text="{CustomerID}"/>
+		</ComboBox>
+		<Table id="idtable">
+		<columns>
+		<Column>
+		<header>
+		<Text text="OrederId"/>
+		</header>
+		</Column>
+		<Column>
+		<header>
+		<Text text="CustomerId"/>
+		</header>
+		</Column>
+		<Column>
+		<header>
+		<Text text="EmployeeId"/>
+		</header>
+		</Column>
+		<Column>
+		<header>
+		<Text text="OrederDate"/>
+		</header>
+		</Column>
+		
+		</columns>
+		
+		</Table>
+	
+		</content>
+	</Page>
+</core:View>

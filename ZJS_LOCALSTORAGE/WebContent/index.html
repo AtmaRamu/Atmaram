@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>S-MAX Technologies Employee Registration</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div class="mainDiv">
+		<div class="header">
+			<div class="smaxLogo">
+				<img src="image/smax_logo.PNG" />
+			</div>
+
+
+			<div class="headerContent">
+				<h1>S-MAX Technologies</h1>
+			</div>
+			<div class="headerLinks">
+				<a href="">Logoff</a> <a href="">Help</a> <a href="">Contact Us</a>
+			</div>
+		</div>
+		
+		<div class="content" id="contentDiv">
+			<div class="emptyDiv">&nbsp;</div>
+			<div class="frmdiv">
+			<form id="empRegForm" action="./page/container.html">
+				<div class="frmHead"><h2>Employee Registration form</h2></div>
+			
+				
+				<div class="fieldDiv">
+					<div class="labelDiv"><label>Employee Name :</label></div>
+					<div class="inputDiv"><input id="empName" placeholder="Enter Your name" value="Karunakar"></div>
+				
+				</div>
+				<div class="fieldDiv">
+					<div class="labelDiv"><label>Department : </label></div>
+					<div class="inputDiv">
+						<select id="dept">
+							<option value="Sales">Sales</option>
+							<option value="Technology">Technology</option>
+							<option value="Admin">Admin</option>
+							<option value="Transport">Transport</option>
+
+					</select>
+					</div>
+				</div>
+				<div class="fieldDiv">
+					<div class="labelDiv"><label>Role : </label></div>
+					<div class="inputDiv">
+						<select id="role">
+	
+								<option value="developer">Developer</option>
+								<option value="Lead">Team Lead</option>
+								<option value="manager">Project Manager</option>
+								<option value="Transport">Transport</option>
+						</select></div>				
+				</div>
+				<div class="fieldDiv">
+					<div class="labelDiv"><label>Personal Email : </label></div>
+					<div class="inputDiv" ><input type="email" placeholder="pkar...@gmail.com" id="inpEmail"></div>
+				
+				</div>
+				<div class="fieldDiv">
+					<div class="labelDiv"><label>PANNo. : </label></div>
+					<div class="inputDiv"><input placeholder="Enter PAN Number" id="inpPAN"> <br></div>
+				
+				</div>
+				<div class="fieldDiv">
+					<div class="labelDiv"><label>Country: </label></div>
+					<div class="inputDiv">
+						<select id="country">
+							<option value="">Enter Your Country</option>
+							<option value="India">India</option>
+						</select> 
+					</div>
+				
+				</div>
+				<div class="fieldDiv">
+					<div class="labelDiv"><label>Zip Code : </label></div>
+					<div class="inputDiv"><input placeholder="Enter Pin code" id="inpPIN"></div>
+				
+				</div>
+				
+				<div class="frmHead">
+					<button class="btnPositive" onclick="onRegister()">Register</button>
+					<button class="btnNegative">Reset</button>
+					<button class="btnEmpasized" onclick="onRegister()">Save</button>
+				</div>
+			 
+				</form>
+			</div>
+			<div class="emptyDiv">&nbsp;</div>
+
+		</div>
+		<div class="footer">
+			<marquee>
+				<h3>Powered by S-MAX Technologies</h3>
+			</marquee>
+		</div>
+
+	</div>
+
+<script>
+	function onRegister(){
+//		debugger;
+// 		var empNameS = localStorage.getItem("empName");
+// 		document.getElementById("empName").value = empNameS;
+		
+		//console.log(empNameS);
+		var empName= document.getElementById("empName").value;
+		console.log("Employee Name " +empName);
+		localStorage.setItem("empName", empName);
+		var department = document.getElementById("dept").value;
+		console.log("Department : "+department);
+		localStorage.setItem("dept", department);
+ 		var role = document.getElementById("role").value;
+ 		console.log(role);
+ 		localStorage.setItem("role", role);
+ 		var country = document.getElementById("country").value;
+ 		console.log(country);
+		localStorage.setItem("country", country);
+ 		var email = document.getElementById("inpEmail").value;
+ 		console.log(email);
+ 		localStorage.setItem("email", email);
+ 		var panNo = document.getElementById("inpPAN").value;
+ 		console.log(panNo);
+ 		localStorage.setItem("panNo", panNo);
+		var pin = document.getElementById("inpPIN").value;
+		console.log(pin);
+		localStorage.setItem("pin", pin);
+ 		//var []empArr = [{"name":"Karunakar", "dept":"SAP"},{"name":"Sandhya","dept":"SAP"}];
+ 		//var jsonData = '{"employees":[{"name":"'+empName+'\","dept":"'+department+'\"}]}';
+ 		//var empObj = '{"name":\"'+empName+'\","dept":\"'+department+'\"}';
+ 		//localStorage.setItem("empArr", empArr);
+ 		//console.log("employees : "+localStorage.getItem("employees"));
+ 		//var jsonData = JSON.parse(localStorage.getItem("employees"));
+ 		
+ 		//jsonData.employees.push(empObj);
+ 		
+ 		//var jsonData1 = JSON.parse(localStorage.getItem("employees"));
+ 		//console.log("json data after insert :"+jsonData1.employees);
+ 		
+ 		//console.log("jsonData.name "+jsonData.employees[0].dept);
+		
+		//data empdata = [{'empName':empName, 'dept':department}];
+		//localStorage.setItem("empName",empName);
+		
+		//var temp = localStorage.getItem("empName");
+		//console.log("employee name from storage is : "+temp);
+		
+		//var empObj = {"name":"sandhya", dep}
+	}
+	
+</script>
+
+</body>
+</html>

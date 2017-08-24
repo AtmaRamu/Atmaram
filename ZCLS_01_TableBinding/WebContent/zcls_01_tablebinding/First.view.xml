@@ -1,0 +1,66 @@
+<core:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m"
+		controllerName="zcls_01_tablebinding.First" xmlns:html="http://www.w3.org/1999/xhtml">
+	<Page title="Title">
+		<content>
+			<Table id="idProductsTable"
+		inset="false" items="{/Customers}">
+		<headerToolbar>
+			<Toolbar>
+			<ComboBox id = "idCombo">
+	                    </ComboBox>
+			<!-- <ComboBox items="{/Customers}" id="idCombo">
+			
+			<core:Item text="{Country}"/>
+			
+			
+			</ComboBox> -->
+			<!-- <ComboBox items="{/Customers}">
+			
+			<core:Item text="{Country}"/>
+			
+			
+			</ComboBox> -->
+			<Button text="Go" press="onPress"/>
+				
+			</Toolbar>
+		</headerToolbar>
+		<columns>
+			<Column
+				width="12em">
+				<Text text="CustomerId" />
+			</Column>
+			<Column
+				minScreenWidth="Tablet"
+				demandPopin="true">
+				<Text text="CustomerName" />
+			</Column>
+			<Column
+				minScreenWidth="Tablet"
+				demandPopin="true"
+				hAlign="Right">
+				<Text text="ContactName" />
+			</Column>
+			<Column
+				minScreenWidth="Tablet"
+				demandPopin="true"
+				hAlign="Center">
+				<Text text="Country" />
+			</Column>
+			
+		</columns>
+		<items>
+			<ColumnListItem>
+				<cells>
+				<Text text="{CustomerID}"/>
+				<Text text="{CompanyName}"/>
+				<Text text="{ContactName}"/>
+				<Text text="{Country}"/>
+					
+				</cells>
+			</ColumnListItem>
+		</items>
+	</Table>
+	
+		</content>
+	</Page>
+</core:View>

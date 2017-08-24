@@ -1,0 +1,21 @@
+<core:FragmentDefinition xmlns="sap.m"
+	xmlns:f="sap.ui.layout.form" xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc">
+	
+ 
+		<f:SimpleForm layout="ResponsiveGridLayout" minWidth="1024">
+			<f:content>
+				<core:Title text="Some Sample Data" />
+				<Label text="Customer Name" />
+				<Input  />
+				<Label text="Customer Number" />
+				<Input  />
+				<Label text="Customer Number" />
+				<DatePicker/>
+				<core:Title text="" />
+				<Label text="Country" />
+				<Input  />
+			</f:content>
+		</f:SimpleForm>
+ 
+	
+</core:FragmentDefinition>

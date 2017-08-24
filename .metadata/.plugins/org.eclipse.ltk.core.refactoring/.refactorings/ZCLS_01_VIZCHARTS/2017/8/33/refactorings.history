@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;ZCLS_01_VIZCHARTS/WebContent/zcls_01_vizcharts/Third.view.js&apos; to &apos;Third.view.xml&apos;" description="Rename resource &apos;Third.view.js&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="WebContent/zcls_01_vizcharts/Third.view.js" name="Third.view.xml" stamp="1502997639528" updateReferences="true"/>
+</session>

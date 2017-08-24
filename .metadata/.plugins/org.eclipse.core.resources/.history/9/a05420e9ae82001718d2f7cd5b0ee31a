@@ -1,0 +1,26 @@
+<core:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m"
+		controllerName="zcls_segment_button.First" xmlns:html="http://www.w3.org/1999/xhtml">
+	<Page title="Title">
+		<content>
+				
+			
+			<!-- 	<SegmentedButton>
+				
+				
+					<items>
+						<SegmentedButtonItem text="{/productData/ProductName/0}" />
+						<SegmentedButtonItem text="{/productData/ProductName/1}" />
+						<SegmentedButtonItem text="{/productData/ProductName/2}" />
+					</items> 
+				</SegmentedButton> -->
+				
+				<!-- <List items="{/Product}">
+				<items>
+				<StandardListItem text="{/ProductID}"/>
+				</items>
+				</List> -->
+				<List id="idl"/>
+	
+		</content>
+	</Page>
+</core:View>

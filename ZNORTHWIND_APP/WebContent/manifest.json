@@ -1,0 +1,55 @@
+{
+	"sap.app" : {
+		"id" : "com.sap.northwind"
+	},
+	"sap.ui5" : {
+		"rootView" : "com.sap.northwind.view.App",
+		"routing" : {
+			"config" : {
+				"routerClass" : "sap.m.routing.Router",
+				"viewPath" : "com.sap.northwind.view",
+				"viewType" : "XML",
+				"controlId" : "idApp",
+				"controlAggregation" : "pages"
+			},
+			"routes" : [
+			            {
+			            	"pattern" : "",
+			            	"name" : "defaultRoute",
+			            	"target" : "homePage"
+			            },
+			            {
+			            	"pattern" : "OrderDetail/{OrderID}",
+			            	"name" : "orderDetailRoute",
+			            	"target" : "orderDetailPage"
+			            },
+			            {
+			            	"pattern" : "Employees/{EmployeeID}",
+			            	"name" : "empDetailRoute",
+			            	"target" : "empDetailPage"			            	
+			            },
+			            {
+			            	"pattern" : "AddCustomer",
+			            	"name" : "createCustomerRoute",
+			            	"target" : "createCustomerPage"			            	
+			            }
+			            ],
+			"targets" : {
+						 "homePage" : {
+							 "viewName" : "OrdersPage"
+						 },
+						 "orderDetailPage" : {
+							 "viewName" : "OrderDetailPage"
+						 },
+						 "empDetailPage" : {
+							 "viewName" : "EmployeeDetailsPage"
+						 },
+						 "createCustomerPage" : {
+							 "viewName" : "CreateCustomer"
+						 }
+			}
+				
+			}
+		}
+	
+}

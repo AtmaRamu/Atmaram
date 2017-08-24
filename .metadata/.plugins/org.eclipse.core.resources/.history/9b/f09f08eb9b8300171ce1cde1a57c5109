@@ -1,0 +1,4 @@
+  "Model": {
+                                      "type": "sap.ui.model.json.JSONModel",
+                                       "uri": "model/Data.json"
+                                 }

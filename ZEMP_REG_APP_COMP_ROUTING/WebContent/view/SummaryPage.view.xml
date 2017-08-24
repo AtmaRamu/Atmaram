@@ -1,0 +1,197 @@
+<core:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:f="sap.ui.layout.form"
+		xmlns:l="sap.ui.layout" controllerName="com.smax.empreg.routing.controller.SummaryPage" xmlns:html="http://www.w3.org/1999/xhtml">
+	<Page title="Title">
+		<content>
+			<IconTabBar 
+				id="idIconTabBarSeparatorMixed"
+				expanded="true"
+				class="sapUiResponsiveContentPadding">
+				<items>
+					<IconTabFilter  
+						text="Registration Details">
+						<f:SimpleForm id="regForm"
+							editable="false"
+							layout="ResponsiveGridLayout"
+							title="Employee Personal Details"
+							labelSpanXL="3"
+							labelSpanL="4"
+							labelSpanM="3"
+							labelSpanS="12"
+							adjustLabelSpan="false"
+							emptySpanXL="4"
+							emptySpanL="4"
+							emptySpanM="4"
+							emptySpanS="0"
+							columnsXL="1"
+							columnsL="1"
+							columnsM="1"
+							singleContainerFullSize="false" 
+							backgroundDesign="Solid">
+							<f:content>
+								<Label text="Employee Name"/>
+								<Input type="text" value="" placeholder="Enter your Name"/>	
+								<Label text="Department"/>
+								<Select>
+									<items>
+										<core:Item text="SAP"></core:Item>
+									</items>
+								</Select>
+								<Label text="Role"/>
+								<Select>
+									<items>
+										<core:Item text="Developer"></core:Item>
+									</items>
+								</Select>
+								<Label text="Personal Email"/>
+								<Input type="text"/>
+								<Label text="PAN No."/>
+								<Input type="text"/>
+								<Label text="Country"/>
+								<Select>
+									<items>
+										<core:Item text="India"></core:Item>
+									</items>
+								</Select>
+					</f:content>
+						</f:SimpleForm>	
+					</IconTabFilter>
+					<IconTabSeparator icon="sap-icon://open-command-field"/>
+					<IconTabFilter
+						text="Work Experience">
+						<Panel>
+						<f:SimpleForm id="workExpForm"
+						editable="false"
+						layout="ResponsiveGridLayout"
+						title="Current Employer"
+						labelSpanXL="3"
+						labelSpanL="4"
+						labelSpanM="3"
+						labelSpanS="12"
+						adjustLabelSpan="false"
+						emptySpanXL="4"
+						emptySpanL="4"
+						emptySpanM="4"
+						emptySpanS="0"
+						columnsXL="1"
+						columnsL="1"
+						columnsM="1"
+						singleContainerFullSize="false" 
+						backgroundDesign="Solid">
+						<f:content>
+							<Label text="Employer Name" />
+							<Input/>
+							<Label text="Designation" />
+							<Input/>
+							<Label text="From" />
+							<Input type="Date"/>
+							<Label text="Skills"/>
+							<Input/>	
+							
+						</f:content>
+					</f:SimpleForm>	
+					</Panel>
+					</IconTabFilter>
+					<IconTabSeparator icon="sap-icon://open-command-field"/>
+					<IconTabFilter text="Contact">
+						<VBox class="sapUiSmallMargin">
+							<f:Form id="FormChange354wide"
+								editable="true">
+								<f:title>
+									<core:Title text="Address" />
+								</f:title>
+								<f:layout>
+									<f:ResponsiveGridLayout
+										labelSpanXL="4"
+										labelSpanL="3"
+										labelSpanM="4"
+										labelSpanS="12"
+										adjustLabelSpan="false"
+										emptySpanXL="0"
+										emptySpanL="4"
+										emptySpanM="0"
+										emptySpanS="0"
+										columnsXL="2"
+										columnsL="1"
+										columnsM="1"
+										singleContainerFullSize="false" />
+								</f:layout>
+								<f:formContainers>
+									<f:FormContainer>
+										<f:formElements>
+											<f:FormElement label="Name">
+												<f:fields>
+													<Input value="{SupplierName}" id="name"/>
+												</f:fields>
+											</f:FormElement>
+											<f:FormElement label="Street">
+												<f:fields>
+													<Input value="{Street}" />
+													<Input value="{HouseNumber}">
+														<layoutData>
+															<l:GridData span="XL1 L2 M2 S4" />
+														</layoutData>
+													</Input>
+												</f:fields>
+											</f:FormElement>
+											<f:FormElement label="ZIP Code/City">
+												<f:fields>
+													<Input value="{ZIPCode}">
+														<layoutData>
+															<l:GridData span="XL1 L2 M2 S4" />
+														</layoutData>
+													</Input>
+													<Input value="{City}" />
+												</f:fields>
+											</f:FormElement>
+											<f:FormElement label="Country">
+												<f:fields>
+													<Select id="country" selectedKey="{Country}">
+														<items>
+															<core:Item text="England" key="England"/>
+															<core:Item text="Germany" key="Germany"/>
+															<core:Item text="USA" key="USA"/>
+														</items>
+													</Select>
+												</f:fields>
+											</f:FormElement>
+										</f:formElements>
+									</f:FormContainer>
+								</f:formContainers>
+							</f:Form>
+						</VBox>
+					</IconTabFilter>
+					<IconTabSeparator icon="sap-icon://open-command-field"/>
+					<IconTabFilter
+						text="Bank Details">
+						<f:SimpleForm layout="ResponsiveGridLayout"
+			              emptySpanL="4">
+							<f:content>
+								<Label text="Beneficiary Name"/>
+								<Input type="text" placeholder="As per Bank Records"/>
+								<Label text="IFSC Code"/>
+								<Input type="text" />
+								<Label text="Account No."/>
+								<Input type="text" />
+								<Label text="Confirm Account No."/>
+								<Input type="text" />
+								<Label text="Acount Type"/>
+								<Select>
+									<items>
+									<core:Item text="Savings"></core:Item>
+									<core:Item text="Current"></core:Item>
+									</items>
+								</Select>
+							</f:content>
+						</f:SimpleForm>	
+					</IconTabFilter>
+				</items>
+			</IconTabBar>
+		</content>
+		<footer>
+			<Toolbar>
+				<ToolbarSpacer/>
+				<Button text="Next" icon="sap-icon://sys-next-page"/>
+			</Toolbar>
+		</footer>
+	</Page>
+</core:View>

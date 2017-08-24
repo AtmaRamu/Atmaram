@@ -1,0 +1,11 @@
+<core:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m"
+		controllerName="z_cls_01_splitapp_odata.SimpleForm" xmlns:html="http://www.w3.org/1999/xhtml">
+	<Page title="Title">
+		<content>
+		<ObjectHeader title="{CompanyName}" number="{Phone}" intro="{Fax}" id="idObj"/>
+		
+		
+	
+		</content>
+	</Page>
+</core:View>
